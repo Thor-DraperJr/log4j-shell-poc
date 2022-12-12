@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/bin/env python3
 
 import argparse
 from colorama import Fore, init
@@ -84,7 +84,7 @@ def payload(userip: str, webport: int, lport: int) -> None:
 
 def check_java() -> bool:
     exit_code = subprocess.call([
-        os.path.join(CUR_FOLDER, './usr/bin/java'),
+        os.path.join(CUR_FOLDER, '/usr/bin/java'),
         '-version',
     ], stderr=subprocess.DEVNULL, stdout=subprocess.DEVNULL)
     return exit_code == 0
