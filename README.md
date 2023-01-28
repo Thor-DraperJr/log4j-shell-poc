@@ -1,42 +1,16 @@
-# log4j-shell-poc
-A Proof-Of-Concept for the recently found CVE-2021-44228 vulnerability. <br><br>
-Recently there was a new vulnerability in log4j, a java logging library that is very widely used in the likes of elasticsearch, minecraft and numerous others.
+# AppGw-log4j-shell-poc
 
-In this repository we have made and example vulnerable application and proof-of-concept (POC) exploit of it.
-
-
-A video showing the exploitation process
-----------------------------------------
-
-Vuln Web App:
-
-https://user-images.githubusercontent.com/87979263/146113359-20663eaa-555d-4d60-828d-a7f769ebd266.mp4
-
-<br>
-
-Ghidra (Old script):
-
-https://user-images.githubusercontent.com/87979263/145728478-b4686da9-17d0-4511-be74-c6e6fff97740.mp4
-
-<br>
-
-Minecraft PoC (Old script):
-
-https://user-images.githubusercontent.com/87979263/145681727-2bfd9884-a3e6-45dd-92e2-a624f29a8863.mp4
-
-
-Proof-of-concept (POC)
-----------------------
+Based on the proof of concept for the CVE-2021-44228 vulnerability.
 
 As a PoC we have created a python file that automates the process. 
 
 
-#### Requirements:
+## Requirements:
+
 ```bash
 pip install -r requirements.txt
 ```
-#### Usage:
-
+## Usage:
 
 * Start a netcat listener to accept reverse shell connection.<br>
 ```py
@@ -63,7 +37,7 @@ This script will setup the HTTP server and the LDAP server for you, and it will 
 <br>
 
 
-Our vulnerable application
+## Our vulnerable application
 --------------------------
 
 We have added a Dockerfile with the vulnerable webapp. You can use this by following the steps below:
